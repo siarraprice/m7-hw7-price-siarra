@@ -3,14 +3,24 @@ body {
   font-family: 'Secular One', sans-serif;
 }
 
-.first-contain {
+.first-contain, .ftr {
   background: #D4135C;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
 .second-contain {
   background: #1424B2;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
-.ftr {
-  background: #D4135C;
+h1 {
+  font-size: 4.5rem;
+  line-height: 4rem;
+  padding-top: 1em;
+}
+
+h2 {
+  line-height: 4rem;
 }
