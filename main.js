@@ -1,10 +1,20 @@
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var apiResult = JSON.parse(this.responseText);
 
-        console.log(apiResult.name);
-        console.log(apiResult.weather[0].description);
+        //storing our API object inside of the apiresult
+          var apiResult = JSON.parse(this.responseText);
+
+        // variables for weather informatoin
+        var findName = document.createTextNode(apiResult.name);
+        var findDescription = document.createTextNode(apiResult.weather[0].description);
+
+        //add weather information to the screen
+        var cityName = document.getElementById("city");
+        var weatherDescription = document.getElementById("description");
+
+        cityName.appendChild(findName);
+        weatherDescription.appendChild(findDescription);
 
     }
 };

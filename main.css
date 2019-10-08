@@ -3,17 +3,23 @@ body {
   font-family: 'Secular One', sans-serif;
 }
 
-.first-contain, .ftr {
+.first-contain {
   background: #D4135C;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .second-contain {
   background: #1424B2;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
+
+.ftr {
+    background: #D4135C;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
 
 h1 {
   font-size: 4.5rem;
@@ -23,4 +29,8 @@ h1 {
 
 h2 {
   line-height: 4rem;
+}
+
+span {
+  color: yellow;
 }
